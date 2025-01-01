@@ -1,0 +1,42 @@
+/* General container styles */
+.section-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scrolling animation */
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scrolling-text.reverse {
+  animation: scroll-right 20s linear infinite;
+}
+
+/* Text styling */
+.text-strong {
+  background: linear-gradient(to right, #f39c12, #e74c3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
